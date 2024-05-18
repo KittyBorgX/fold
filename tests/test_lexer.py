@@ -1,5 +1,5 @@
 import unittest
-from main import tokenize
+from lexer import tokenize
 class TestLexer(unittest.TestCase):
     def test_keywords_and_identifiers(self):
         code = "def foo(): pass"
