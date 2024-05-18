@@ -5,7 +5,7 @@ class Logger:
     def info(self, txt: str):
         """
         [INFO] This is an info message. 
-        Color displayed: Yellow
+        Color displayed: Dark Cyan
         """
         print(f"\033[36m[INFO] {txt}\033[m")
 
@@ -19,8 +19,8 @@ class Logger:
     
     def error(self, txt: str):
         """
-        [WARN] This is an warning message. 
-        Color displayed: Magenta
+        [ERROR] This is an error. 
+        Color displayed: Red
         """
         print(f"\033[91m[ERROR] {txt}\033[m")
 
