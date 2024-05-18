@@ -1,13 +1,15 @@
 class Logger: 
-    def __init__(self) -> None:
-        pass
+    typ = ""
+
+    def __init__(self, v: str = "") -> None:
+        self.typ = v.lower()
 
     def info(self, txt: str):
         """
         [INFO] This is an info message. 
         Color displayed: Dark Cyan
         """
-        print(f"\033[36m[INFO] {txt}\033[m")
+        if self.typ == "strict": print(f"\033[36m[INFO] {txt}\033[m")
 
     
     def warning(self, txt: str):
